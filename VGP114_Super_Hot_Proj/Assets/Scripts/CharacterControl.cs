@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterControl : MonoBehaviour
 {
-    static Animator anim;
+    //static Animator anim;
     public float speed;
     public float rotationSpeed;
     public float normalSpeed;
@@ -13,13 +13,12 @@ public class CharacterControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
 
         // Moving
         float translation = Input.GetAxis("Vertical") * speed;
@@ -37,27 +36,27 @@ public class CharacterControl : MonoBehaviour
 
             // Jumping trigger when press space
             //------- Running Jumping --------
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                anim.SetTrigger("isRunJumping");
-            }
+            //if (Input.GetKeyDown(KeyCode.Space))
+            //{
+            //    anim.SetTrigger("isRunJumping");
+            //}
 
 
-            anim.SetBool("isRunning", true);
-            anim.SetBool("isIdle", false);
+            //anim.SetBool("isRunning", true);
+            //anim.SetBool("isIdle", false);
 
         }
         else
         {
             // Jumping trigger when press space
             //------- In place Jumping --------
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                anim.SetTrigger("isJumping");
-            }
+            //if (Input.GetKeyDown(KeyCode.Space))
+            //{
+            //    anim.SetTrigger("isJumping");
+            //}
 
-            anim.SetBool("isRunning", false);
-            anim.SetBool("isIdle", true);
+            //anim.SetBool("isRunning", false);
+            //anim.SetBool("isIdle", true);
         }
 
     }
