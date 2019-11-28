@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class CharacterControl : MonoBehaviour
 {
-    private Vector3 mMovement = Vector3.zero;
     private readonly float mSpeed = 10.0f;
+    private Rigidbody rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        mMovement = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-        transform.position += mMovement * mSpeed * Time.deltaTime;
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+
+        Vector3 tempVect = new Vector3(h, 0, v);
+        tempVect = tempVect.normalized * mSpeed * Time.deltaTime;
+        rb.MovePosition(transform.position + tempVect);
     }
 
 }
