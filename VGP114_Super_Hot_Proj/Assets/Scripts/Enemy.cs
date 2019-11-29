@@ -14,7 +14,9 @@ public class Enemy : MonoBehaviour
     public int hitCount = 3; //number of hits
     public float hitTime = 2.0f; //time in seconds between each hit
     float curTime = 0; //time in seconds since last hit
-#endregion
+    public Rigidbody projectile;
+    private float bulletImpulse = 20.0f;
+    #endregion
 
 
     // Start is called before the first frame update
@@ -33,9 +35,8 @@ public class Enemy : MonoBehaviour
         mPlayerDistance = Vector3.Distance(player.transform.position, transform.position);
         if (player && (mPlayerDistance < mMinDistance))
         {
-            mAnimator.SetTrigger("isJumping");
             LookAtPlayer();
-            if (mPlayerDistance <= 10.0f)
+            if (mPlayerDistance <= 14.0f)
             {
                 if (curTime >= hitTime)
                 {
@@ -61,6 +62,9 @@ public class Enemy : MonoBehaviour
         {
             if (hit.collider.gameObject.tag == "Player")
             {
+                Rigidbody bullet = (Rigidbody)Instantiate(projectile, transform.position + transform.forward, transform.rotation);
+                bullet.AddForce(transform.forward * bulletImpulse, ForceMode.Impulse);
+                Destroy(bullet.gameObject, 2);
                 //hit.collider.gameObject.GetComponent<>().health -= 5f;
                 Debug.Log("Enemy_Attack: Hit");
                 curTime = 0; //reset the time
