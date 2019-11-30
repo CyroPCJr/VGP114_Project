@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     private float mPlayerDistance = 0.0f;
     private Animator mAnimator;
 
+   
 #region Just for test
     public int hitCount = 3; //number of hits
     public float hitTime = 2.0f; //time in seconds between each hit
@@ -90,4 +91,6 @@ public class Enemy : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(position, position + 3.0f * transform.forward);
     }
+
+    
 }
