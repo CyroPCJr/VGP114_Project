@@ -59,7 +59,7 @@ public class CharacterControl : MonoBehaviour, ICharacterAction
             GameObject bullet = (GameObject)Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
 
             // Add velocity to the bullet
-            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6.0f;
+            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 56.0f;
 
             // Destroy the bullet after 4s
             Destroy(bullet, 4);
