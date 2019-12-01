@@ -6,11 +6,6 @@ public class SlowMotion : MonoBehaviour
 {
     public GameObject slowMotion;
     // Start is called before the first frame update
-    void Start()
-    {
-        //slowMotion.SetActive(false);
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -24,7 +19,7 @@ public class SlowMotion : MonoBehaviour
         else
         {
             //slowMotion.SetActive(true);
-            Time.timeScale = 0.15f;
+            Time.timeScale = 0.1f;
             Debug.Log("slow motion time");
         }
     }

@@ -43,7 +43,10 @@ public class Enemy : MonoBehaviour, ICharacterAction
         {
             _agent.isStopped = true;
             LookAtPlayer();
-            Attack();
+            if (curTime <= hitTime)
+            {
+                Attack();
+            }
             mAnimator.SetBool("isRunning", false);
         }
         else

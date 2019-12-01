@@ -7,7 +7,7 @@ public class CharacterControl : MonoBehaviour, ICharacterAction
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
 
-    private readonly float mSpeed = 10.0f;
+    private readonly float mSpeed = 5.0f;
     private float gravity = -9.81f;
     private Rigidbody rb;
 
@@ -19,7 +19,7 @@ public class CharacterControl : MonoBehaviour, ICharacterAction
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
-    int health = 5;
+    int health = 50;
     Vector3 velocity;
     bool isGrounded;
 
@@ -46,7 +46,10 @@ public class CharacterControl : MonoBehaviour, ICharacterAction
             velocity.y = -2f;
         }
 
-        Vector3 move = transform.right * h + transform.forward * v;
+        Vector3 vForward = transform.forward;
+        vForward.y = 0.0f;
+        vForward.Normalize();
+        Vector3 move = transform.right * h + vForward * v;
         controller.Move(move * mSpeed * Time.deltaTime);
 
         velocity.y += gravity * Time.deltaTime;
