@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterControl : MonoBehaviour
+public class CharacterControl : MonoBehaviour, ICharacterAction
 {
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
@@ -63,8 +63,6 @@ public class CharacterControl : MonoBehaviour
 
             // Destroy the bullet after 4s
             Destroy(bullet, 4);
-
-
         }
         
     }
@@ -82,7 +80,7 @@ public class CharacterControl : MonoBehaviour
         {
             if(health == 0)
             {
-                
+                // scope to indicate when the player died
             }
             else
             {
@@ -93,4 +91,17 @@ public class CharacterControl : MonoBehaviour
         }
     }
 
+    public void TakeDamage(float dmg)
+    {
+        health -= (int)dmg;
+        if(health <= 0.0f)
+        {
+            Debug.Log("Game Over!");
+        }
+    }
+
+    public void Attack()
+    {
+        //throw new System.NotImplementedException();
+    }
 }
