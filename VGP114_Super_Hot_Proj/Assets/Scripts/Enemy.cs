@@ -93,7 +93,7 @@ public class Enemy : MonoBehaviour, ICharacterAction
         Gizmos.DrawLine(position, position + 3.0f * transform.forward);
     }
 
-    public void TakeDamage(float dmg)
+    public void TakeDamage(int dmg)
     {
         health -= dmg;
         if (health <= 0.0f)

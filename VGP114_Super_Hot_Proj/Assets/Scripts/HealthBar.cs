@@ -7,8 +7,8 @@ public class HealthBar : MonoBehaviour
 {
     public Image ImgHealthBar;
     public Text TxtHealth;
-    public int Min;
-    public int Max;
+    private int Min = 0;
+    private int Max = 50;
 
     private int mCurrentValue;
     private float mCurrentPercent;

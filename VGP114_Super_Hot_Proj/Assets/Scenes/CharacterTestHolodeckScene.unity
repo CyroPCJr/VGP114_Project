@@ -999,7 +999,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &910026152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,32 +1225,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+    - target: {fileID: 5316668484015112968, guid: d231218f5a1680e49bacb64bb59df3fe,
         type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1387259862}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1387259863}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 54238672335603214, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
-        type: 3}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: hitTime
-      value: 10
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 1602284852}
     - target: {fileID: 197786566603358968, guid: d231218f5a1680e49bacb64bb59df3fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1306,6 +1285,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1387259862}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1387259863}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 54238672335603214, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
+        type: 3}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: hitTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1602284852}
     - target: {fileID: 7797048256707981186, guid: d231218f5a1680e49bacb64bb59df3fe,
         type: 3}
       propertyPath: m_Enabled
@@ -1345,11 +1350,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5316668484015112968, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d231218f5a1680e49bacb64bb59df3fe, type: 3}
@@ -2307,32 +2307,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+    - target: {fileID: 5316668484015112968, guid: d231218f5a1680e49bacb64bb59df3fe,
         type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1387259862}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1387259863}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 54238672335603214, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
-        type: 3}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: hitTime
-      value: 10
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 1602284852}
     - target: {fileID: 197786566603358968, guid: d231218f5a1680e49bacb64bb59df3fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2388,6 +2367,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1387259862}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1387259863}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 54238672335603214, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
+        type: 3}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: hitTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1602284852}
     - target: {fileID: 7797048256707981186, guid: d231218f5a1680e49bacb64bb59df3fe,
         type: 3}
       propertyPath: m_Enabled
@@ -2427,11 +2432,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5316668484015112968, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d231218f5a1680e49bacb64bb59df3fe, type: 3}
@@ -2712,32 +2712,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+    - target: {fileID: 5316668484015112968, guid: d231218f5a1680e49bacb64bb59df3fe,
         type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1387259862}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1387259863}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 54238672335603214, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
-        type: 3}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: hitTime
-      value: 10
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 1602284852}
     - target: {fileID: 197786566603358968, guid: d231218f5a1680e49bacb64bb59df3fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2793,6 +2772,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1387259862}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1387259863}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 54238672335603214, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
+        type: 3}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: hitTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471304623232754089, guid: d231218f5a1680e49bacb64bb59df3fe,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1602284852}
     - target: {fileID: 7797048256707981186, guid: d231218f5a1680e49bacb64bb59df3fe,
         type: 3}
       propertyPath: m_Enabled
@@ -2833,11 +2838,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5316668484015112968, guid: d231218f5a1680e49bacb64bb59df3fe,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d231218f5a1680e49bacb64bb59df3fe, type: 3}
 --- !u!1001 &7082027036949567888
@@ -2855,7 +2855,7 @@ PrefabInstance:
     - target: {fileID: 8939115971079082925, guid: ab1271feb61c20b4c9c45e51ad679e25,
         type: 3}
       propertyPath: Max
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916438921667354302, guid: ab1271feb61c20b4c9c45e51ad679e25,
         type: 3}

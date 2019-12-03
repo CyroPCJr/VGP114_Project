@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface ICharacterAction
 {
-    void TakeDamage(float dmg);
+    void TakeDamage(int dmg);
     void Attack();
 }

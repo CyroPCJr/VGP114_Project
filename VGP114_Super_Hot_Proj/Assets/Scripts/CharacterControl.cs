@@ -11,8 +11,6 @@ public class CharacterControl : MonoBehaviour, ICharacterAction
     private float gravity = -9.81f;
     private Rigidbody rb;
 
-
-
     public HealthBar healthBar;
     public CharacterController controller;
     public Transform groundCheck;
@@ -41,7 +39,7 @@ public class CharacterControl : MonoBehaviour, ICharacterAction
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        if(isGrounded && velocity.y < 0)
+        if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
@@ -77,27 +75,11 @@ public class CharacterControl : MonoBehaviour, ICharacterAction
         Gizmos.DrawLine(position, position + 50.0f * transform.forward);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void TakeDamage(int dmg)
     {
-        if(collision.transform.tag == "Bullet")
-        {
-            if(health == 0)
-            {
-                // scope to indicate when the player died
-            }
-            else
-            {
-                health -= 1;
-                healthBar.setHealth(health);
-            }
-           
-        }
-    }
-
-    public void TakeDamage(float dmg)
-    {
-        health -= (int)dmg;
-        if(health <= 0.0f)
+        health -= dmg;
+        healthBar.setHealth(health);
+        if (health <= 0.0f)
         {
             Debug.Log("Game Over!");
         }

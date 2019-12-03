@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletCollison : MonoBehaviour
 {
     public GameObject bullet;
-    private readonly float mDamage = 10.0f;
+    private readonly int mDamage = 10;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -25,7 +25,7 @@ public class BulletCollison : MonoBehaviour
             {
                 damageable.TakeDamage(mDamage);
             }
-            Debug.Log("Hit Enemy");
+            Debug.Log("Hit Player");
             Destroy(bullet);
         }
     }
