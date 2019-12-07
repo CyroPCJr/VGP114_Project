@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour, ICharacterAction
         {
             curTime += Time.deltaTime; //add time
         }
-        
+
         if (player && (mPlayerDistance < mMinDistance))
         {
             _agent.isStopped = true;
@@ -56,13 +56,13 @@ public class Enemy : MonoBehaviour, ICharacterAction
             mAnimator.SetBool("isIdle", true);
         }
 
-        if(!_isFind)
+        if (!_isFind)
         {
             Debug.Log("Where is player?");
         }
         else
         {
-            
+
             Debug.Log("There you are!");
         }
 
@@ -118,5 +118,5 @@ public class Enemy : MonoBehaviour, ICharacterAction
             }
         }
     }
-    
+
 }
