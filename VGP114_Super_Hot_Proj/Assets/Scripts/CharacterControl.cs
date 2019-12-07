@@ -60,6 +60,7 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
         controller.Move(velocity * Time.deltaTime);
 
         Shooting();
+        GameManager.Instance.CheckGameOver(this);
     }
 
     private void OnDrawGizmos()
@@ -67,11 +68,6 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
         Vector3 position = bulletSpawn.position;
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(position, position + 50.0f * transform.forward);
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        
     }
 
     /// <summary>
