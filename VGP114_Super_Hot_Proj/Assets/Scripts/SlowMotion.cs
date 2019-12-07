@@ -10,7 +10,7 @@ public class SlowMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKey)
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             //slowMotion.SetActive(false);
             Time.timeScale = 1.0f;

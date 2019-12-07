@@ -4,6 +4,19 @@ using UnityEngine;
 
 public class CharacterControl : MonoBehaviour, ICharacterAction
 {
+    public AudioSource gunFire;
+    public AudioSource gunShell;
+    public AudioSource footStep;
+    private bool footSoundPlay = false;
+    private float count = 0.0f;
+
+    public GameObject myCamera;
+    private Animation cameraAnimation;
+
+
+    private Animation mAnimation;
+    public GameObject HandGun;
+
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
 
@@ -53,17 +66,42 @@ public class CharacterControl : MonoBehaviour, ICharacterAction
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
+        // play sound when move
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
+            cameraAnimation = myCamera.GetComponent<Animation>();
+
+            float countTime = Time.deltaTime;
+            count += countTime;
+            if (countTime < 0.05f && footSoundPlay == false)
+            {
+                footStep.Play();
+                cameraAnimation.Play("Camera");
+                footSoundPlay = true;
+            }
+            if (count > 0.5f)
+            {
+                footSoundPlay = false;
+                count = 0.0f;
+            }
+            
+        }
+
         //play shooting
         if (Input.GetMouseButtonDown(0))
         {
+            mAnimation = HandGun.GetComponent<Animation>();
+            mAnimation.Play("GunRecoil");
+            gunFire.Play();
+            gunShell.Play();
             // create the bullet fromo the prefab
             GameObject bullet = (GameObject)Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
 
             // Add velocity to the bullet
             bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 56.0f;
 
-            // Destroy the bullet after 4s
-            Destroy(bullet, 4);
+            // Destroy the bullet after 6s
+            Destroy(bullet, 6);
         }
         
     }
