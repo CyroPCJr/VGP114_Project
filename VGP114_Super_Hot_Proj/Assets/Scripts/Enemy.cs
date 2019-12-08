@@ -98,6 +98,7 @@ public class Enemy : MonoBehaviour, ICharacterAction
         health -= dmg;
         if (health <= 0.0f)
         {
+            //mAnimator.SetBool("isDead", true);
             Destroy(this);
         }
     }

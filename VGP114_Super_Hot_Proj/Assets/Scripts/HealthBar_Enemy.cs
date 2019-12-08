@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar_Enemy : MonoBehaviour
 {
+
     public Image ImgHealthBar;
     public int Min;
     public int Max;
