@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!111 &7248246957509780194
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7246463886282396650}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 6534536f5ef644044b774a060a1237fa, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 6534536f5ef644044b774a060a1237fa, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &7248246955558605157
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,20 +146,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunFire: {fileID: 0}
+  x: {fileID: 8300000, guid: 8e13d671c4c184e4896de268139cca06, type: 3}
   gunShell: {fileID: 0}
   footStep: {fileID: 0}
-  myCamera: {fileID: 7248246957291232194}
   HandGun: {fileID: 7246463886282396650}
   bulletPrefab: {fileID: 1122964723992546, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
     type: 3}
   bulletSpawn: {fileID: 7248246955660171760}
-  healthBar: {fileID: 8849721392781376654}
-  controller: {fileID: 7248246955558605165}
-  groundCheck: {fileID: 7248246955800745373}
-  groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 256
+  controller: {fileID: 7248246955558605165}
+  groundCheck: {fileID: 7248246955800745373}
 --- !u!114 &7248246955558605167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,22 +746,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!111 &7248246957509780194
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7246463886282396650}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 6534536f5ef644044b774a060a1237fa, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 6534536f5ef644044b774a060a1237fa, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1001 &495000294675459875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -872,18 +870,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab1271feb61c20b4c9c45e51ad679e25, type: 3}
---- !u!114 &8849721392781376654 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8939115971079082925, guid: ab1271feb61c20b4c9c45e51ad679e25,
-    type: 3}
-  m_PrefabInstance: {fileID: 495000294675459875}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a270ba6460412c429a07c3f32553250, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &750201719480856989 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 916438921667354302, guid: ab1271feb61c20b4c9c45e51ad679e25,
@@ -947,15 +933,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfe8fefa5bc33d54c9e0a213c042b75d, type: 3}
---- !u!1 &7246463886282396650 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1810581554106536, guid: dfe8fefa5bc33d54c9e0a213c042b75d,
-    type: 3}
-  m_PrefabInstance: {fileID: 7248246955549229890}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7249099865162439620 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4235179229403270, guid: dfe8fefa5bc33d54c9e0a213c042b75d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7248246955549229890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7246463886282396650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1810581554106536, guid: dfe8fefa5bc33d54c9e0a213c042b75d,
     type: 3}
   m_PrefabInstance: {fileID: 7248246955549229890}
   m_PrefabAsset: {fileID: 0}

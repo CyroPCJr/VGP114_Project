@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class CharacterControl : MonoBehaviour //, ICharacterAction
 {
+
+    public AudioSource gunFire;
+    public AudioSource gunShell;
+    public AudioSource footStep;
+
+    private bool footSoundPlay = false;
+    private float count = 0.0f;
+
+    //public GameObject myCamera;
+    //private Animation cameraAnimation;
+
+
+    private Animation mAnimation;
+    public GameObject HandGun;
+
+
     [Header("References")]
     [SerializeField]
     private GameObject bulletPrefab;
@@ -23,9 +39,13 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
     private bool isGrounded;
     Vector3 velocity;
 
+    private Camera mCamera;
+
     private void Awake()
     {
         Cursor.visible = false;
+
+        mCamera = FindObjectOfType<Camera>();
     }
 
     // Update is called once per frame
@@ -50,6 +70,28 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
+        // play sound when move
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
+            //cameraAnimation = myCamera.GetComponent<Animation>();
+
+            float countTime = Time.deltaTime;
+            count += countTime;
+            if (countTime < 0.05f && footSoundPlay == false)
+            {
+                footStep.Play();
+                //cameraAnimation.Play("Camera");
+                mCamera.GetComponent<Animation>().Play("Camera");
+                footSoundPlay = true;
+            }
+            if (count > 0.5f)
+            {
+                footSoundPlay = false;
+                count = 0.0f;
+            }
+
+        }
+
         Shooting();
         GameManager.Instance.CheckGameOver(this);
     }
@@ -68,6 +110,11 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
     {
         if (Input.GetMouseButtonDown(0))
         {
+            mAnimation = HandGun.GetComponent<Animation>();
+            mAnimation.Play("GunRecoil");
+            gunFire.Play();
+            gunShell.Play();
+
             // create the bullet fromo the prefab
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
             // Add velocity to the bullet
