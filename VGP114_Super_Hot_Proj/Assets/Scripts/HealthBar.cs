@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
+    [Header("References")]
     public Image ImgHealthBar;
     public Text TxtHealth;
     private int Min = 0;

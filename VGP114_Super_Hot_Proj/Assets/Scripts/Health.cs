@@ -14,12 +14,10 @@ public class Health : MonoBehaviour
     public void TakeDamage(int amount)
     {
         CurrentHealth -= amount;
-        Debug.Log($"[Health] {gameObject.ToString()} taken damage, current health = {CurrentHealth.ToString()}");
         if (CurrentHealth <= 0)
         {
             CurrentHealth = 0;
             isDead = true;
-            Debug.Log($"[Health] {gameObject.ToString()} is DEAD");
         }
     }
 }

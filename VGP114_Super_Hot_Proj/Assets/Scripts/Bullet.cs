@@ -4,10 +4,11 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField]
     private int mDamage = 10;
+
     private void OnCollisionEnter(Collision collision)
     {
         GameObject hit = collision.gameObject;
-        if (hit.gameObject.CompareTag("Player") )
+        if (hit.gameObject.CompareTag("Player"))
         {
             Health health = hit.GetComponent<Health>();
             if (health)
@@ -29,7 +30,7 @@ public class Bullet : MonoBehaviour
             if (health)
             {
                 health.TakeDamage(mDamage);
-                HealthBar_Enemy hBar = hit.GetComponent<HealthBar_Enemy>();
+                HealthBar_Enemy hBar = hit.GetComponentInChildren<HealthBar_Enemy>();
                 if (hBar)
                 {
                     hBar.UpdateHealth();
@@ -37,8 +38,7 @@ public class Bullet : MonoBehaviour
 
                 Destroy(gameObject);
             }
-        }       
-
+        }
     }
 
 

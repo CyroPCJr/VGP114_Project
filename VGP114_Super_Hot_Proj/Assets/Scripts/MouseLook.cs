@@ -16,7 +16,7 @@ public class MouseLook : MonoBehaviour
     private float rotationY = 0F;
     private Quaternion originalRotation;
     private Rigidbody rb;
-    // Start is called before the first frame update
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();

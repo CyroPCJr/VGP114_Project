@@ -19,29 +19,20 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
     private readonly float mSpeed = 15.0f; // player speed
     private readonly float groundDistance = 0.4f;
     private readonly float gravity = -9.81f;
-    private readonly float mBulletSpeed = 55.0f; // bullet speed
+    private readonly float mBulletSpeed = 20.0f; // bullet speed
     private bool isGrounded;
     Vector3 velocity;
 
-    // private Rigidbody rb;
-    //public HealthBar healthBar;
-    //int health = 50;
-
-    //void Start()
-    //{
-    //    // rb = GetComponent<Rigidbody>();
-    //}
+    private void Awake()
+    {
+        Cursor.visible = false;
+    }
 
     // Update is called once per frame
     void Update()
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
-
-        //Vector3 tempVect = new Vector3(h, 0, v);
-        //tempVect = tempVect.normalized * mSpeed * Time.deltaTime;
-        //rb.MovePosition(transform.position + tempVect);
-
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
@@ -85,19 +76,4 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
             Destroy(bullet, 4.0f);
         }
     }
-
-    //public void TakeDamage(int dmg)
-    //{
-    //    health -= dmg;
-    //    healthBar.setHealth(health);
-    //    if (health <= 0.0f)
-    //    {
-    //        Debug.Log("Game Over!");
-    //    }
-    //}
-
-    //public void Attack()
-    //{
-    //    //throw new System.NotImplementedException();
-    //}
 }
