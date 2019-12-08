@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 136436518488396882}
   - component: {fileID: 54238672335603214}
   - component: {fileID: -7165245702100265731}
-  - component: {fileID: 9029069323340068996}
+  - component: {fileID: 7605017400293719376}
   m_Layer: 0
   m_Name: Bullet_45mm_Full
   m_TagString: Bullet
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122964723992546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0165}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4602091987834400}
@@ -45,10 +45,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.02
+  m_Radius: 0.07
   m_Height: 0.1
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.03}
 --- !u!54 &54238672335603214
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -169,7 +169,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &9029069323340068996
+--- !u!114 &7605017400293719376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,10 +178,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1122964723992546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69c74734caa0fa3499adc4a6953076c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 98b0d6b712b561e46aaa539a1f80360c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1122964723992546}
+  mDamage: 10
 --- !u!1 &1155386949238690
 GameObject:
   m_ObjectHideFlags: 0

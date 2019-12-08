@@ -10,7 +10,7 @@ public abstract class BaseState
     public BaseState(GameObject gameObject)
     {
         mGameObject = gameObject;
-        mTransform = gameObject.transform;
+        mTransform = gameObject.transform;   
     }
 
 }

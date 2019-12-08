@@ -182,7 +182,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 916438922053994902}
-  - component: {fileID: 8939115971079082925}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -213,22 +212,6 @@ RectTransform:
   m_AnchoredPosition: {x: 181, y: -46}
   m_SizeDelta: {x: 300, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8939115971079082925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916438922053994905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a270ba6460412c429a07c3f32553250, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ImgHealthBar: {fileID: 916438922539294114}
-  TxtHealth: {fileID: 916438923014082584}
-  Min: 0
-  Max: 100
 --- !u!1 &916438922539294116
 GameObject:
   m_ObjectHideFlags: 0

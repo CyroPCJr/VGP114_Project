@@ -2,41 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterControl : MonoBehaviour, ICharacterAction
+public class CharacterControl : MonoBehaviour //, ICharacterAction
 {
-    public AudioSource gunFire;
-    public AudioSource gunShell;
-    public AudioSource footStep;
-    private bool footSoundPlay = false;
-    private float count = 0.0f;
+    [Header("References")]
+    [SerializeField]
+    private GameObject bulletPrefab;
+    [SerializeField]
+    private Transform bulletSpawn;
+    [SerializeField]
+    private LayerMask groundMask;
+    [SerializeField]
+    private CharacterController controller;
+    [SerializeField]
+    private Transform groundCheck;
 
-    public GameObject myCamera;
-    private Animation cameraAnimation;
-
-
-    private Animation mAnimation;
-    public GameObject HandGun;
-
-    public GameObject bulletPrefab;
-    public Transform bulletSpawn;
-
-    private readonly float mSpeed = 5.0f;
-    private float gravity = -9.81f;
-    private Rigidbody rb;
-
-    public HealthBar healthBar;
-    public CharacterController controller;
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
-
-    int health = 50;
+    private readonly float mSpeed = 15.0f; // player speed
+    private readonly float groundDistance = 0.4f;
+    private readonly float gravity = -9.81f;
+    private readonly float mBulletSpeed = 20.0f; // bullet speed
+    private bool isGrounded;
     Vector3 velocity;
-    bool isGrounded;
 
-    void Start()
+    private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -44,11 +33,6 @@ public class CharacterControl : MonoBehaviour, ICharacterAction
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
-
-        //Vector3 tempVect = new Vector3(h, 0, v);
-        //tempVect = tempVect.normalized * mSpeed * Time.deltaTime;
-        //rb.MovePosition(transform.position + tempVect);
-
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
@@ -66,44 +50,8 @@ public class CharacterControl : MonoBehaviour, ICharacterAction
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        // play sound when move
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-        {
-            cameraAnimation = myCamera.GetComponent<Animation>();
-
-            float countTime = Time.deltaTime;
-            count += countTime;
-            if (countTime < 0.05f && footSoundPlay == false)
-            {
-                footStep.Play();
-                cameraAnimation.Play("Camera");
-                footSoundPlay = true;
-            }
-            if (count > 0.5f)
-            {
-                footSoundPlay = false;
-                count = 0.0f;
-            }
-            
-        }
-
-        //play shooting
-        if (Input.GetMouseButtonDown(0))
-        {
-            mAnimation = HandGun.GetComponent<Animation>();
-            mAnimation.Play("GunRecoil");
-            gunFire.Play();
-            gunShell.Play();
-            // create the bullet fromo the prefab
-            GameObject bullet = (GameObject)Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-
-            // Add velocity to the bullet
-            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 56.0f;
-
-            // Destroy the bullet after 6s
-            Destroy(bullet, 6);
-        }
-        
+        Shooting();
+        GameManager.Instance.CheckGameOver(this);
     }
 
     private void OnDrawGizmos()
@@ -113,18 +61,19 @@ public class CharacterControl : MonoBehaviour, ICharacterAction
         Gizmos.DrawLine(position, position + 50.0f * transform.forward);
     }
 
-    public void TakeDamage(int dmg)
+    /// <summary>
+    /// Enable Player to shooting using the left mouse click
+    /// </summary>
+    private void Shooting()
     {
-        health -= dmg;
-        healthBar.setHealth(health);
-        if (health <= 0.0f)
+        if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Game Over!");
+            // create the bullet fromo the prefab
+            GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+            // Add velocity to the bullet
+            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * mBulletSpeed;
+            // Destroy the bullet after 4s
+            Destroy(bullet, 4.0f);
         }
-    }
-
-    public void Attack()
-    {
-        //throw new System.NotImplementedException();
     }
 }

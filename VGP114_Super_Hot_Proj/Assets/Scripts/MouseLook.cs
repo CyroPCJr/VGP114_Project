@@ -1,49 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
 
-    //public float mouseSensitivity = 100f;
-    //public Transform PlayerBody;
-    //float xRotation = 0f;
-
-
-    //void Start()
-    //{
-    //    Cursor.lockState = CursorLockMode.Locked;
-    //}
-
-    //// Update is called once per frame
-    //void Update()
-    //{
-
-    //    float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-    //    float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-
-    //    xRotation -= mouseY;
-    //    xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-    //    transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-    //    PlayerBody.Rotate(Vector3.up * mouseX);
-
-    //}
-
-
     private enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
     private readonly RotationAxes axes = RotationAxes.MouseXAndY;
-    private float sensitivityX = 10.0f;
-    private float sensitivityY = 10.0f;
-    private float minimumX = -360.0f;
-    private float maximumX = 360.0f;
-    private float minimumY = -60.0f;
-    private float maximumY = 60.0f;
+    private readonly float sensitivityX = 10.0f;
+    private readonly float sensitivityY = 10.0f;
+    private readonly float minimumX = -360.0f;
+    private readonly float maximumX = 360.0f;
+    private readonly float minimumY = -60.0f;
+    private readonly float maximumY = 60.0f;
 
-    float rotationX = 0F;
-    float rotationY = 0F;
-    Quaternion originalRotation;
-    Rigidbody rb;
-    // Start is called before the first frame update
+    private float rotationX = 0F;
+    private float rotationY = 0F;
+    private Quaternion originalRotation;
+    private Rigidbody rb;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();

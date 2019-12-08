@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CharacterTestHolodeckScene.unity
+    guid: 93a892f2ec0fd9f45859ae02b5429a16
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: c1ae17f2eb6bbf94481838a72ef26726
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: db1c1ffe3fb34ed42907adbe6bcce828
   m_configObjects: {}
