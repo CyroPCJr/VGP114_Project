@@ -1,11 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 public class Enemy : MonoBehaviour //, ICharacterAction
 {
-    [SerializeField]
-    private GameObject mSpawnBullets;
     [SerializeField]
     private GameObject bulletPrefab;
 
@@ -13,19 +9,11 @@ public class Enemy : MonoBehaviour //, ICharacterAction
 
     private readonly float mBulletSpeed = 20.0f; // bullet speed
 
-    private readonly float mRangeDistance = 15.0f;
+    private readonly float mRangeDistance = 50.0f;
     private float mPlayerDistance = 0.0f;
-    private bool mIsOnRange = false;
     private Animator mAnimator;
-    //    private float health = 5.0f;
 
     private NavMeshAgent _agent;
-
-    #region Just for test
-    public int hitCount = 3; //number of hits
-    public float hitTime = 2.0f; //time in seconds between each hit
-    float curTime = 0; //time in seconds since last hit
-    #endregion
     private Health mHealth;
     PlayerHud playerHud;
 
@@ -47,22 +35,13 @@ public class Enemy : MonoBehaviour //, ICharacterAction
     // Update is called once per frame
     void Update()
     {
-        mIsOnRange = Vector3.Distance(mPlayer.transform.position, transform.position) < mRangeDistance;
-        //mPlayerDistance = Vector3.Distance(mPlayer.transform.position, transform.position);
+        mPlayerDistance = Vector3.Distance(mPlayer.transform.position, transform.position);
 
-        if (hitCount > 0) //if there are more hits left
-        {
-            curTime += Time.time; //add time
-        }
-
-        if (mPlayer && (mIsOnRange))
+        if (mPlayer && (mPlayerDistance < mRangeDistance))
         {
             _agent.isStopped = true;
             LookAtPlayer();
-            if (curTime <= hitTime)
-            {
-                Shooting();
-            }
+            Shooting();
             mAnimator.SetBool("isRunning", false);
         }
         else
@@ -104,20 +83,26 @@ public class Enemy : MonoBehaviour //, ICharacterAction
         Gizmos.DrawLine(position, position + 3.0f * transform.forward);
     }
 
+
+    private float timerAttack = 2f;
     public void Shooting()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit))
+        timerAttack -= Time.deltaTime;
+        if (timerAttack <= 0)
         {
-            if (hit.collider.gameObject.CompareTag("Player"))
+            timerAttack = 0;
+            if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit))
             {
-                GameObject bullet = Instantiate(bulletPrefab, transform.position + transform.forward, transform.rotation);
-                bullet.GetComponent<Rigidbody>().AddForce(transform.forward * mBulletSpeed, ForceMode.Impulse);
-                Destroy(bullet.gameObject, 2);
-
-                curTime = 0; //reset the time
-                hitCount--; //subtract one from the hit count
+                if (hit.collider.gameObject.CompareTag("Player"))
+                {
+                    GameObject bullet = Instantiate(bulletPrefab, transform.position + transform.forward, transform.rotation);
+                    bullet.GetComponent<Rigidbody>().AddForce(transform.forward * mBulletSpeed, ForceMode.Impulse);
+                    Destroy(bullet.gameObject, 2);
+                }
             }
         }
+
     }
+
 
 }

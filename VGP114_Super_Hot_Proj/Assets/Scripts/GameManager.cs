@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckGoalLevel(int kills)
     {
+        Debug.Log($"[CheckGoalLevel]: {Kills}");
         if (Kills == kills)
         {
             SceneManager.LoadScene(winScene);

@@ -723,9 +723,9 @@ GameObject:
   - component: {fileID: 7797048256707981186}
   - component: {fileID: 6923784643393248727}
   - component: {fileID: 3454983720632842270}
+  - component: {fileID: 2967876678628372996}
   - component: {fileID: 895532666912026557}
   - component: {fileID: 525459214196639944}
-  - component: {fileID: 2967876678628372996}
   m_Layer: 0
   m_Name: Character
   m_TagString: Enemy
@@ -800,37 +800,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &895532666912026557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3811720998259667179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c43eea2d60343754fab3096766f4f8fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mSpawnBullets: {fileID: 2204200263805020016}
-  bulletPrefab: {fileID: 1122964723992546, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
-    type: 3}
-  hitCount: 5
-  hitTime: 10
---- !u!114 &525459214196639944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3811720998259667179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aa93cec638caca40bc7437b58165f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxHealth: 50
-  isDead: 0
 --- !u!195 &2967876678628372996
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -853,6 +822,34 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &895532666912026557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3811720998259667179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43eea2d60343754fab3096766f4f8fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1122964723992546, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
+    type: 3}
+--- !u!114 &525459214196639944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3811720998259667179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa93cec638caca40bc7437b58165f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 50
+  isDead: 0
 --- !u!1 &3879027934345350578
 GameObject:
   m_ObjectHideFlags: 0
