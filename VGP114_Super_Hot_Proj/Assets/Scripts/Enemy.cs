@@ -17,8 +17,8 @@ public class Enemy : MonoBehaviour //, ICharacterAction
     private float mPlayerDistance = 0.0f;
     private bool mIsOnRange = false;
     private Animator mAnimator;
-//    private float health = 5.0f;
-    private bool _isFind = false;
+    //    private float health = 5.0f;
+
     private NavMeshAgent _agent;
 
     #region Just for test
@@ -27,11 +27,13 @@ public class Enemy : MonoBehaviour //, ICharacterAction
     float curTime = 0; //time in seconds since last hit
     #endregion
     private Health mHealth;
+    PlayerHud playerHud;
 
     private void Awake()
     {
         mHealth = GetComponent<Health>();
         mPlayer = FindObjectOfType<CharacterControl>();
+        playerHud = FindObjectOfType<PlayerHud>();
     }
 
 
@@ -70,20 +72,11 @@ public class Enemy : MonoBehaviour //, ICharacterAction
             mAnimator.SetBool("isIdle", true);
         }
 
-        //if (!_isFind)
-        //{
-        //    Debug.Log("Where is player?");
-        //}
-        //else
-        //{
-
-        //    Debug.Log("There you are!");
-        //}
-
         _agent.SetDestination(mPlayer.transform.position);
         if (mHealth.isDead)
         {
             Destroy(gameObject);
+            playerHud.UpdateKills();
         }
     }
 

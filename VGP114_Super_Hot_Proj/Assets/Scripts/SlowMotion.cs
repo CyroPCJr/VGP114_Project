@@ -4,23 +4,19 @@ using UnityEngine;
 
 public class SlowMotion : MonoBehaviour
 {
-    public GameObject slowMotion;
-    // Start is called before the first frame update
+    PlayerHud PlayerHud;
+
+    private void Awake()
+    {
+        PlayerHud = FindObjectOfType<PlayerHud>();
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-        {
-            //slowMotion.SetActive(false);
-            Time.timeScale = 1.0f;
-            Debug.Log("key down");
-        }
-        else
-        {
-            //slowMotion.SetActive(true);
-            Time.timeScale = 0.1f;
-            Debug.Log("slow motion time");
-        }
+        bool movement = (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D));
+        PlayerHud.UpdateClockImage(movement);
+        Time.timeScale = movement ? 1f : 0.1f;
     }
 }

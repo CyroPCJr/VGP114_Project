@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [Header("Goal")]
-    public int Kills = 0;
+    public int Kills = 10;
 
     public static GameManager Instance { get; private set; }
 

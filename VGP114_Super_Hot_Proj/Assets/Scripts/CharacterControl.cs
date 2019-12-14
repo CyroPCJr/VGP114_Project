@@ -1,20 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CharacterControl : MonoBehaviour //, ICharacterAction
 {
 
+    [Header("SFX")]
     public AudioSource gunFire;
     public AudioSource gunShell;
     public AudioSource footStep;
 
     private bool footSoundPlay = false;
     private float count = 0.0f;
-
-    //public GameObject myCamera;
-    //private Animation cameraAnimation;
-
 
     private Animation mAnimation;
     public GameObject HandGun;
@@ -44,7 +39,6 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
     private void Awake()
     {
         Cursor.visible = false;
-
         mCamera = FindObjectOfType<Camera>();
     }
 
@@ -112,6 +106,7 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
         {
             mAnimation = HandGun.GetComponent<Animation>();
             mAnimation.Play("GunRecoil");
+
             gunFire.Play();
             gunShell.Play();
 

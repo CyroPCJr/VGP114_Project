@@ -17,7 +17,6 @@ public class HealthBar_Enemy : MonoBehaviour
     public void UpdateHealth()
     {
         float healthPercentage = ((float)health.CurrentHealth / (float)health.MaxHealth) * 100.0f;
-        Debug.Log($"PERCENTAGE {healthPercentage}");
         mImgHealthBar.fillAmount = (healthPercentage * 0.01f); // max value is 1 and min 0
     }
    
