@@ -31,15 +31,18 @@ public class GameManager : MonoBehaviour
     /// <param name="player"></param>
     public void CheckGameOver(CharacterControl player)
     {
-        if (player.GetComponent<Health>().isDead)
+        if (player)
         {
-            SceneManager.LoadScene(gameOverScene);
+            if (player.GetComponent<Health>().isDead)
+            {
+                SceneManager.LoadScene(gameOverScene);
+            }
         }
+
     }
 
     public void CheckGoalLevel(int kills)
     {
-        Debug.Log($"[CheckGoalLevel]: {Kills}");
         if (Kills == kills)
         {
             SceneManager.LoadScene(winScene);

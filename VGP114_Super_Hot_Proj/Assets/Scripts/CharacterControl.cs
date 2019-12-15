@@ -87,7 +87,6 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
         }
 
         Shooting();
-        GameManager.Instance.CheckGameOver(this);
     }
 
     private void OnDrawGizmos()

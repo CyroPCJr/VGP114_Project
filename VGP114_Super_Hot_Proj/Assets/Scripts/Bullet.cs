@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bullet : MonoBehaviour
 {
@@ -14,10 +15,18 @@ public class Bullet : MonoBehaviour
             if (health)
             {
                 health.TakeDamage(mDamage);
-                HealthBar hBar = hit.GetComponent<HealthBar>();
+                HealthBar hBar = hit.GetComponentInChildren<HealthBar>();
                 if (hBar)
                 {
                     hBar.UpdateHealth();
+
+                    if (health.isDead)
+                    {
+                        SceneManager.LoadScene("GameOver");
+                    }
+
+                    // Update here
+                    //GameManager.Instance.CheckGameOver(hit);
                 }
 
                 Destroy(gameObject);

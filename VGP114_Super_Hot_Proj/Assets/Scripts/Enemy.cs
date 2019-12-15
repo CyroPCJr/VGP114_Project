@@ -5,6 +5,8 @@ public class Enemy : MonoBehaviour //, ICharacterAction
     [SerializeField]
     private GameObject bulletPrefab;
 
+    public Transform SpawnBullets;
+
     private CharacterControl mPlayer;
 
     private readonly float mBulletSpeed = 20.0f; // bullet speed
@@ -84,18 +86,18 @@ public class Enemy : MonoBehaviour //, ICharacterAction
     }
 
 
-    private float timerAttack = 2f;
+    private float timerAttack = 0.5f;
     public void Shooting()
     {
         timerAttack -= Time.deltaTime;
         if (timerAttack <= 0)
         {
-            timerAttack = 0;
+            timerAttack = 0.5f;
             if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit))
             {
                 if (hit.collider.gameObject.CompareTag("Player"))
                 {
-                    GameObject bullet = Instantiate(bulletPrefab, transform.position + transform.forward, transform.rotation);
+                    GameObject bullet = Instantiate(bulletPrefab, SpawnBullets.position, SpawnBullets.rotation);
                     bullet.GetComponent<Rigidbody>().AddForce(transform.forward * mBulletSpeed, ForceMode.Impulse);
                     Destroy(bullet.gameObject, 2);
                 }
