@@ -1,21 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SlowMotion : MonoBehaviour
 {
-    PlayerHud PlayerHud;
+    private readonly float slowDownLength = 2f;
+    private readonly float slowDownFactor = 0.05f;
 
-    private void Awake()
+    [SerializeField]
+    private Transform mPostProcessing;
+
+    private Transform mPlayerPosition;
+    private void Start()
     {
-        PlayerHud = FindObjectOfType<PlayerHud>();
+        mPlayerPosition = GetComponent<Transform>();
     }
-
 
     void Update()
     {
         bool movement = (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D));
-        PlayerHud.UpdateClockImage(movement);
-        Time.timeScale = movement ? 1f : 0.1f;
+        TimeBulletEffects(movement);
+    }
+
+    private void TimeBulletEffects(bool timeTriggered)
+    {
+        if (timeTriggered)
+        {
+            Time.timeScale += (1f / slowDownLength) * Time.unscaledDeltaTime;
+            Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
+            mPostProcessing.position = new Vector3(mPlayerPosition.position.x, mPlayerPosition.position.y, mPlayerPosition.position.z + 2f);
+        }
+        else
+        {
+            Time.timeScale = slowDownFactor;
+            Time.fixedDeltaTime = Time.timeScale * 0.02f;
+            mPostProcessing.position = new Vector3(mPlayerPosition.position.x, mPlayerPosition.position.y, mPlayerPosition.position.z  -1.5f);
+        }
+
     }
 }

@@ -96,6 +96,7 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
         Gizmos.DrawLine(position, position + 50.0f * transform.forward);
     }
 
+
     /// <summary>
     /// Enable Player to shooting using the left mouse click
     /// </summary>
@@ -113,8 +114,8 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
             // Add velocity to the bullet
             bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * mBulletSpeed;
-            // Destroy the bullet after 4s
-            Destroy(bullet, 4.0f);
+            // Destroy the bullet after 10s
+            Destroy(bullet, 10f);
         }
     }
 }
