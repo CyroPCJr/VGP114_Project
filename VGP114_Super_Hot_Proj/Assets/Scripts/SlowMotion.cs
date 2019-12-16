@@ -12,7 +12,6 @@ public class SlowMotion : MonoBehaviour
     }
 
 
-    // Update is called once per frame
     void Update()
     {
         bool movement = (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D));

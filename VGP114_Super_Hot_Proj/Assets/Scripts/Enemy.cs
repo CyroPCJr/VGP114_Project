@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour //, ICharacterAction
 
     private readonly float mBulletSpeed = 20.0f; // bullet speed
 
-    private readonly float mRangeDistance = 50.0f;
+    private readonly float mRangeDistance = 30.0f;
     private float mPlayerDistance = 0.0f;
     private Animator mAnimator;
 
@@ -27,19 +27,17 @@ public class Enemy : MonoBehaviour //, ICharacterAction
     }
 
 
-    // Start is called before the first frame update
     void Start()
     {
         mAnimator = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         mPlayerDistance = Vector3.Distance(mPlayer.transform.position, transform.position);
 
-        if (mPlayer && (mPlayerDistance < mRangeDistance))
+        if (mPlayer && (mPlayerDistance <= mRangeDistance))
         {
             _agent.isStopped = true;
             LookAtPlayer();
@@ -85,22 +83,22 @@ public class Enemy : MonoBehaviour //, ICharacterAction
         Gizmos.DrawLine(position, position + 3.0f * transform.forward);
     }
 
-
-    private float timerAttack = 0.5f;
+    const float MAX_TIMER_ATTACK = 0.1f;
+    private float timerAttack = MAX_TIMER_ATTACK;
     public void Shooting()
     {
         timerAttack -= Time.deltaTime;
         if (timerAttack <= 0)
         {
-            timerAttack = 0.5f;
+            timerAttack = MAX_TIMER_ATTACK;
             if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit))
             {
-                if (hit.collider.gameObject.CompareTag("Player"))
-                {
+                //if (hit.collider.gameObject.CompareTag("Player"))
+                //{
                     GameObject bullet = Instantiate(bulletPrefab, SpawnBullets.position, SpawnBullets.rotation);
                     bullet.GetComponent<Rigidbody>().AddForce(transform.forward * mBulletSpeed, ForceMode.Impulse);
-                    Destroy(bullet.gameObject, 2);
-                }
+                    Destroy(bullet.gameObject, 10);
+                //}
             }
         }
 
