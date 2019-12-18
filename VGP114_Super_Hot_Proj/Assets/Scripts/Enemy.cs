@@ -83,14 +83,13 @@ public class Enemy : MonoBehaviour //, ICharacterAction
         Gizmos.DrawLine(position, position + 3.0f * transform.forward);
     }
 
-    const float MAX_TIMER_ATTACK = 0.1f;
-    private float timerAttack = MAX_TIMER_ATTACK;
+    private float timerAttack = 0f;
+    private float fireRate = 0.5f;
     public void Shooting()
     {
-        timerAttack -= Time.deltaTime;
-        if (timerAttack <= 0)
+        if (Time.time > timerAttack)
         {
-            timerAttack = MAX_TIMER_ATTACK;
+            timerAttack = Time.time + fireRate;
             if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit))
             {
                 //if (hit.collider.gameObject.CompareTag("Player"))
