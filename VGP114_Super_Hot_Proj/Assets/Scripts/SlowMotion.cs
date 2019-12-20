@@ -24,15 +24,17 @@ public class SlowMotion : MonoBehaviour
     {
         if (timeTriggered)
         {
+            // Normal time scale
             Time.timeScale += (1f / slowDownLength) * Time.unscaledDeltaTime;
             Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
-            mPostProcessing.position = new Vector3(mPlayerPosition.position.x, mPlayerPosition.position.y, mPlayerPosition.position.z + 2f);
+            mPostProcessing.position = new Vector3(mPlayerPosition.position.x, mPlayerPosition.position.y, mPlayerPosition.position.z - 3f);
         }
         else
         {
+            // Slow time scale
             Time.timeScale = slowDownFactor;
             Time.fixedDeltaTime = Time.timeScale * 0.02f;
-            mPostProcessing.position = new Vector3(mPlayerPosition.position.x, mPlayerPosition.position.y, mPlayerPosition.position.z  -1.5f);
+            mPostProcessing.position = new Vector3(mPlayerPosition.position.x, mPlayerPosition.position.y, mPlayerPosition.position.z );
         }
 
     }
