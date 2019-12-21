@@ -50,6 +50,7 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
     void Update()
     {
         Movement();
+        
         // play sound when move
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
@@ -70,9 +71,13 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
                 count = 0.0f;
             }
 
+
+        }
+        else
+        {
+            Shooting();
         }
 
-        Shooting();
     }
 
     private void Movement()

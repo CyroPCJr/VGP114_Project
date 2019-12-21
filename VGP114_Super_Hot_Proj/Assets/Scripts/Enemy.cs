@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour //, ICharacterAction
 
     private readonly float mBulletSpeed = 30.0f; // bullet speed
 
-    private readonly float mRangeDistance = 30.0f;
+    private readonly float mRangeDistance = 15.0f;
     private float mPlayerDistance = 0.0f;
     private Animator mAnimator;
 
@@ -92,7 +92,7 @@ public class Enemy : MonoBehaviour //, ICharacterAction
     }
 
     private float timerAttack = 0f;
-    private float fireRate = 0.5f;
+    private float fireRate = 1f;
     public void Shooting()
     {
         if (Time.time > timerAttack)

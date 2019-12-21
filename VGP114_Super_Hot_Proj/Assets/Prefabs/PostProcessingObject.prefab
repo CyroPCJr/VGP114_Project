@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4711827878612423355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sharedProfile: {fileID: 11400000, guid: d0b29e01dad992d4082c25c309de2ff6, type: 2}
   isGlobal: 0
-  blendDistance: 0.5
+  blendDistance: 0.05
   weight: 1
   priority: 0
 --- !u!65 &4711827878612423359
