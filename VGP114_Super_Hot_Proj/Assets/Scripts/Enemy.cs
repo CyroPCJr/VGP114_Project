@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour //, ICharacterAction
 
     private CharacterControl mPlayer;
 
-    private readonly float mBulletSpeed = 20.0f; // bullet speed
+    private readonly float mBulletSpeed = 30.0f; // bullet speed
 
     private readonly float mRangeDistance = 30.0f;
     private float mPlayerDistance = 0.0f;
@@ -18,7 +18,9 @@ public class Enemy : MonoBehaviour //, ICharacterAction
     private NavMeshAgent _agent;
     private Health mHealth;
     PlayerHud playerHud;
+    public ParticleSystem blood;
 
+    private bool mIsAlive = true;
     private void Awake()
     {
         mHealth = GetComponent<Health>();
@@ -41,7 +43,10 @@ public class Enemy : MonoBehaviour //, ICharacterAction
         {
             _agent.isStopped = true;
             LookAtPlayer();
-            Shooting();
+            if (mIsAlive)
+            {
+                Shooting();
+            }
             mAnimator.SetBool("isRunning", false);
         }
         else
@@ -52,10 +57,13 @@ public class Enemy : MonoBehaviour //, ICharacterAction
         }
 
         _agent.SetDestination(mPlayer.transform.position);
-        if (mHealth.isDead)
+        if (mHealth.isDead && mIsAlive)
         {
-            Destroy(gameObject);
+            mAnimator.SetTrigger("isDead");
             playerHud.UpdateKills();
+            Destroy(gameObject, 3.0f);
+            mIsAlive = false;
+            
         }
     }
 
@@ -100,7 +108,10 @@ public class Enemy : MonoBehaviour //, ICharacterAction
                 //}
             }
         }
-
+    }
+    public void GetHurt()
+    {
+        blood.Play();
     }
 
 

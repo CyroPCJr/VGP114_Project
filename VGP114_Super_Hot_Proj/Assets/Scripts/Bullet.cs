@@ -42,6 +42,7 @@ public class Bullet : MonoBehaviour
                 HealthBar_Enemy hBar = hit.GetComponentInChildren<HealthBar_Enemy>();
                 if (hBar)
                 {
+                    FindObjectOfType<Enemy>().GetHurt();
                     hBar.UpdateHealth();
                 }
 
