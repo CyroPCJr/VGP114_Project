@@ -33,11 +33,13 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
     private readonly float mSpeed = 15.0f; // player speed
     private readonly float groundDistance = 0.4f;
     private readonly float gravity = -9.81f;
-    private readonly float mBulletSpeed = 20.0f; // bullet speed
+    private readonly float mBulletSpeed = 30.0f; // bullet speed
     private bool isGrounded;
     Vector3 velocity;
 
     private Camera mCamera;
+
+    private bool isCharacterMoving = false;
 
     private void Awake()
     {
@@ -51,7 +53,9 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
     {
         Movement();
         // play sound when move
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        isCharacterMoving = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D);
+
+        if (isCharacterMoving)
         {
             //cameraAnimation = myCamera.GetComponent<Animation>();
 
