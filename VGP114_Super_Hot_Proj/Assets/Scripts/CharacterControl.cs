@@ -110,7 +110,7 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
 
 
     private float timerAttack = 0f;
-    private readonly float fireRate = 1f;
+    private readonly float fireRate = 0.1f;
     /// <summary>
     /// Enable Player to shooting using the left mouse click
     /// </summary>
