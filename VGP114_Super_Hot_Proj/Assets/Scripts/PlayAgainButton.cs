@@ -11,9 +11,7 @@ public class PlayAgainButton : MonoBehaviour
 
     public void PlayAgain()
     {
-        SceneManager.LoadScene("CharacterTestHolodeckScene");
+        SceneManager.LoadScene(1);
     }
-
-    public void LevelSelect(string levelName) => SceneManager.LoadScene(levelName);
 
 }

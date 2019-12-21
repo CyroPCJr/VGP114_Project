@@ -6,7 +6,7 @@ public class SlowMotion : MonoBehaviour
     private readonly float slowDownFactor = 0.05f;
 
     [SerializeField]
-    private Transform mPostProcessing;
+    private GameObject mPostProcessing;
 
     private Transform mPlayerPosition;
     private void Start()
@@ -22,19 +22,21 @@ public class SlowMotion : MonoBehaviour
 
     private void TimeBulletEffects(bool timeTriggered)
     {
+        mPostProcessing.SetActive(!timeTriggered);
         if (timeTriggered)
         {
             // Normal time scale
             Time.timeScale += (1f / slowDownLength) * Time.unscaledDeltaTime;
             Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
-            mPostProcessing.position = new Vector3(mPlayerPosition.position.x, mPlayerPosition.position.y, mPlayerPosition.position.z - 3f);
+            // mPostProcessing.position = new Vector3(mPlayerPosition.position.x, mPlayerPosition.position.y, mPlayerPosition.position.z - 3f);
+            
         }
         else
         {
             // Slow time scale
             Time.timeScale = slowDownFactor;
             Time.fixedDeltaTime = Time.timeScale * 0.02f;
-            mPostProcessing.position = new Vector3(mPlayerPosition.position.x, mPlayerPosition.position.y, mPlayerPosition.position.z );
+            //mPostProcessing.position = new Vector3(mPlayerPosition.position.x, mPlayerPosition.position.y, mPlayerPosition.position.z );
         }
 
     }

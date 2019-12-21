@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CharacterTestHolodeckScene.unity
-    guid: 93a892f2ec0fd9f45859ae02b5429a16
+    path: Assets/Scenes/StartScene.unity
+    guid: 02a5924ed2e4e434e983da186c7cb589
+  - enabled: 1
+    path: Assets/Scenes/Example_02.unity
+    guid: c5fbc9acaac873a40a9c4ad27307f930
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: c1ae17f2eb6bbf94481838a72ef26726
