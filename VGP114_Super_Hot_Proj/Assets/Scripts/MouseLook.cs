@@ -5,8 +5,8 @@ public class MouseLook : MonoBehaviour
 
     private enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
     private readonly RotationAxes axes = RotationAxes.MouseXAndY;
-    private readonly float sensitivityX = 10.0f;
-    private readonly float sensitivityY = 10.0f;
+    private readonly float sensitivityX = 5.0f;
+    private readonly float sensitivityY = 5.0f;
     private readonly float minimumX = -360.0f;
     private readonly float maximumX = 360.0f;
     private readonly float minimumY = -60.0f;

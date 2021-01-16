@@ -30,7 +30,7 @@ public class CharacterControl : MonoBehaviour //, ICharacterAction
     [SerializeField]
     private ParticleSystem mMuzzleFlash;
 
-    private readonly float mSpeed = 15.0f; // player speed
+    private readonly float mSpeed = 10.0f; // player speed
     private readonly float groundDistance = 0.4f;
     private readonly float gravity = -9.81f;
     private readonly float mBulletSpeed = 30.0f; // bullet speed

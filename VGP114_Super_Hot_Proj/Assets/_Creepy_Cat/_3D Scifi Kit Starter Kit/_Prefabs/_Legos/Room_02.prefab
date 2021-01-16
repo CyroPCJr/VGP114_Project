@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4355284779156520}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4477338543932396}
   m_Layer: 0
   m_Name: Roof_Light_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 4605735105720546}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 4095859985833938}
   m_Layer: 0
   m_Name: Roof_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 4543244726473232}
   m_Layer: 0
   m_Name: Wall_Top_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 4181063947770364}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 4617367349851712}
   m_Layer: 0
   m_Name: Wall_Normal_02
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 4026998038275508}
   m_Layer: 0
   m_Name: Floor_Normal_02
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1219,7 +1219,7 @@ GameObject:
   - component: {fileID: 4407133170280830}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1250,7 +1250,7 @@ GameObject:
   - component: {fileID: 4392907613890476}
   m_Layer: 0
   m_Name: Wall_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1463,7 +1463,7 @@ GameObject:
   - component: {fileID: 4151682070906560}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1494,7 +1494,7 @@ GameObject:
   - component: {fileID: 4686344843867566}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1784,7 +1784,7 @@ GameObject:
   - component: {fileID: 4326440412527784}
   m_Layer: 0
   m_Name: Floor_Square_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1906,7 +1906,7 @@ GameObject:
   - component: {fileID: 4904462736840948}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1937,7 +1937,7 @@ GameObject:
   - component: {fileID: 4023883901832820}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1968,7 +1968,7 @@ GameObject:
   - component: {fileID: 4731548427853814}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2090,7 +2090,7 @@ GameObject:
   - component: {fileID: 4767177645898818}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2121,7 +2121,7 @@ GameObject:
   - component: {fileID: 4192280368048702}
   m_Layer: 0
   m_Name: Wall_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2243,7 +2243,7 @@ GameObject:
   - component: {fileID: 4204863460627140}
   m_Layer: 0
   m_Name: Roof_Light_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2366,7 +2366,7 @@ GameObject:
   - component: {fileID: 4912341623717248}
   m_Layer: 0
   m_Name: Floor_Normal_02
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2397,7 +2397,7 @@ GameObject:
   - component: {fileID: 4842793506984594}
   m_Layer: 0
   m_Name: Floor_Square_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2792,7 +2792,7 @@ GameObject:
   - component: {fileID: 4700345867644904}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2914,7 +2914,7 @@ GameObject:
   - component: {fileID: 4732883352493936}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3128,7 +3128,7 @@ GameObject:
   - component: {fileID: 4137945255885792}
   m_Layer: 0
   m_Name: Roof_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3341,7 +3341,7 @@ GameObject:
   - component: {fileID: 4079256856259922}
   m_Layer: 0
   m_Name: Roof_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3372,7 +3372,7 @@ GameObject:
   - component: {fileID: 4895595632415944}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3403,7 +3403,7 @@ GameObject:
   - component: {fileID: 4977790344386028}
   m_Layer: 0
   m_Name: Wall_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3434,7 +3434,7 @@ GameObject:
   - component: {fileID: 4479484864763284}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3465,7 +3465,7 @@ GameObject:
   - component: {fileID: 4751569527060646}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3587,7 +3587,7 @@ GameObject:
   - component: {fileID: 4094637673234636}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3709,7 +3709,7 @@ GameObject:
   - component: {fileID: 4275145802130112}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3922,7 +3922,7 @@ GameObject:
   - component: {fileID: 4647047013485180}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4044,7 +4044,7 @@ GameObject:
   - component: {fileID: 4868983079871932}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4257,7 +4257,7 @@ GameObject:
   - component: {fileID: 4514517415096556}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4288,7 +4288,7 @@ GameObject:
   - component: {fileID: 4126744017322760}
   m_Layer: 0
   m_Name: Wall_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4804,7 +4804,7 @@ GameObject:
   - component: {fileID: 4221912556274834}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4926,7 +4926,7 @@ GameObject:
   - component: {fileID: 4203906859263864}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5139,7 +5139,7 @@ GameObject:
   - component: {fileID: 4382357949290736}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5396,7 +5396,7 @@ GameObject:
   - component: {fileID: 4337459030854468}
   m_Layer: 0
   m_Name: Wall_Top_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5427,7 +5427,7 @@ GameObject:
   - component: {fileID: 4914767169366108}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5641,7 +5641,7 @@ GameObject:
   - component: {fileID: 4826724582759332}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5672,7 +5672,7 @@ GameObject:
   - component: {fileID: 4343397295309822}
   m_Layer: 0
   m_Name: Wall_Top_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5703,7 +5703,7 @@ GameObject:
   - component: {fileID: 4782556064525912}
   m_Layer: 0
   m_Name: Room_02
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5715,7 +5715,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362952842401906}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -39.564796, y: -3.907689, z: 27.25612}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5857,7 +5857,7 @@ GameObject:
   - component: {fileID: 4609633443707590}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5979,7 +5979,7 @@ GameObject:
   - component: {fileID: 4109329709748890}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6010,7 +6010,7 @@ GameObject:
   - component: {fileID: 4937639140360800}
   m_Layer: 0
   m_Name: Wall_Top_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6223,7 +6223,7 @@ GameObject:
   - component: {fileID: 4196180265246376}
   m_Layer: 0
   m_Name: Wall_Top_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6345,7 +6345,7 @@ GameObject:
   - component: {fileID: 4479733717017872}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6376,7 +6376,7 @@ GameObject:
   - component: {fileID: 4208726029377452}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6407,7 +6407,7 @@ GameObject:
   - component: {fileID: 4300013376029338}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6530,7 +6530,7 @@ GameObject:
   - component: {fileID: 4141418811903164}
   m_Layer: 0
   m_Name: Wall_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6561,7 +6561,7 @@ GameObject:
   - component: {fileID: 4215599244713424}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6895,7 +6895,7 @@ GameObject:
   - component: {fileID: 4658207135887854}
   m_Layer: 0
   m_Name: Wall_Normal_02
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7017,7 +7017,7 @@ GameObject:
   - component: {fileID: 4713094099196444}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7048,7 +7048,7 @@ GameObject:
   - component: {fileID: 4782809682881034}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7171,7 +7171,7 @@ GameObject:
   - component: {fileID: 4611261039437316}
   m_Layer: 0
   m_Name: Roof_Square_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7279,7 +7279,7 @@ GameObject:
   - component: {fileID: 4822461360803882}
   m_Layer: 0
   m_Name: Wall_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7310,7 +7310,7 @@ GameObject:
   - component: {fileID: 4177867395064876}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7341,7 +7341,7 @@ GameObject:
   - component: {fileID: 4444665440503774}
   m_Layer: 0
   m_Name: Floor_Normal_02
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7540,7 +7540,7 @@ GameObject:
   - component: {fileID: 4556705080546818}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7571,7 +7571,7 @@ GameObject:
   - component: {fileID: 4206459209936456}
   m_Layer: 0
   m_Name: Roof_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7784,7 +7784,7 @@ GameObject:
   - component: {fileID: 4435533094425820}
   m_Layer: 0
   m_Name: Floor_Normal_02
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7797,7 +7797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502198358190402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.000011, y: -2, z: 12.000011}
+  m_LocalPosition: {x: 12.000011, y: 0.03, z: 12.000011}
   m_LocalScale: {x: 1.0000019, y: 1, z: 1.0000019}
   m_Children:
   - {fileID: 4181971001514950}
@@ -7906,7 +7906,7 @@ GameObject:
   - component: {fileID: 4673424353091372}
   m_Layer: 0
   m_Name: Floor_Normal_02
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8014,7 +8014,7 @@ GameObject:
   - component: {fileID: 4141587938900448}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8045,7 +8045,7 @@ GameObject:
   - component: {fileID: 4958446050279424}
   m_Layer: 0
   m_Name: Roof_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8076,7 +8076,7 @@ GameObject:
   - component: {fileID: 4461695334067968}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8107,7 +8107,7 @@ GameObject:
   - component: {fileID: 4366596433981322}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8138,7 +8138,7 @@ GameObject:
   - component: {fileID: 4333758173932008}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8348,7 +8348,7 @@ GameObject:
   - component: {fileID: 4568721115416532}
   m_Layer: 0
   m_Name: Wall_Door_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8383,7 +8383,7 @@ GameObject:
   - component: {fileID: 4647764757015824}
   m_Layer: 0
   m_Name: Roof_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8505,7 +8505,7 @@ GameObject:
   - component: {fileID: 4647733610704564}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8536,7 +8536,7 @@ GameObject:
   - component: {fileID: 4330913202488770}
   m_Layer: 0
   m_Name: Roof_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8567,7 +8567,7 @@ GameObject:
   - component: {fileID: 4752014131287672}
   m_Layer: 0
   m_Name: Floor_Normal_02
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8780,7 +8780,7 @@ GameObject:
   - component: {fileID: 4284930213571822}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8980,7 +8980,7 @@ GameObject:
   - component: {fileID: 4963234019748384}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9011,7 +9011,7 @@ GameObject:
   - component: {fileID: 4829727750667086}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9042,7 +9042,7 @@ GameObject:
   - component: {fileID: 4752900140384118}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9073,7 +9073,7 @@ GameObject:
   - component: {fileID: 4735341865736636}
   m_Layer: 0
   m_Name: Pub_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9531,7 +9531,7 @@ GameObject:
   - component: {fileID: 4257229248663228}
   m_Layer: 0
   m_Name: Roof_Square_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9730,7 +9730,7 @@ GameObject:
   - component: {fileID: 4730403703005208}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9852,7 +9852,7 @@ GameObject:
   - component: {fileID: 4400755373514720}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9883,7 +9883,7 @@ GameObject:
   - component: {fileID: 4201684594392030}
   m_Layer: 0
   m_Name: Wall_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10005,7 +10005,7 @@ GameObject:
   - component: {fileID: 4051141598892304}
   m_Layer: 0
   m_Name: Wall_Top_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10036,7 +10036,7 @@ GameObject:
   - component: {fileID: 4484831786537326}
   m_Layer: 0
   m_Name: Roof_Light_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10249,7 +10249,7 @@ GameObject:
   - component: {fileID: 4781687134491640}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10280,7 +10280,7 @@ GameObject:
   - component: {fileID: 4218961024197546}
   m_Layer: 0
   m_Name: Floor_Square_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10311,7 +10311,7 @@ GameObject:
   - component: {fileID: 4079837799634700}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10342,7 +10342,7 @@ GameObject:
   - component: {fileID: 4341179316012952}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10555,7 +10555,7 @@ GameObject:
   - component: {fileID: 4198569863852918}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10769,7 +10769,7 @@ GameObject:
   - component: {fileID: 4141874764006916}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10800,7 +10800,7 @@ GameObject:
   - component: {fileID: 4433945568889472}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10831,7 +10831,7 @@ GameObject:
   - component: {fileID: 4256853130636520}
   m_Layer: 0
   m_Name: Roof_Light_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10953,7 +10953,7 @@ GameObject:
   - component: {fileID: 4664771745496160}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10984,7 +10984,7 @@ GameObject:
   - component: {fileID: 4852321716897340}
   m_Layer: 0
   m_Name: Wall_Door_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11173,7 +11173,7 @@ GameObject:
   - component: {fileID: 4591902705088490}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11295,7 +11295,7 @@ GameObject:
   - component: {fileID: 4732885862849242}
   m_Layer: 0
   m_Name: Wall_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11417,7 +11417,7 @@ GameObject:
   - component: {fileID: 4045926713737862}
   m_Layer: 0
   m_Name: Roof_Square_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11539,7 +11539,7 @@ GameObject:
   - component: {fileID: 4244566196573004}
   m_Layer: 0
   m_Name: Floor_Square_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11661,7 +11661,7 @@ GameObject:
   - component: {fileID: 4600353616992068}
   m_Layer: 0
   m_Name: Wall_Top_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11874,7 +11874,7 @@ GameObject:
   - component: {fileID: 4433294107534718}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12087,7 +12087,7 @@ GameObject:
   - component: {fileID: 4652668791094114}
   m_Layer: 0
   m_Name: Wall_Top_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12118,7 +12118,7 @@ GameObject:
   - component: {fileID: 4490896095835966}
   m_Layer: 0
   m_Name: Roof_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12149,7 +12149,7 @@ GameObject:
   - component: {fileID: 4344922122422046}
   m_Layer: 0
   m_Name: Wall_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12180,7 +12180,7 @@ GameObject:
   - component: {fileID: 4756533346440150}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12821,7 +12821,7 @@ GameObject:
   - component: {fileID: 4791332261458522}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12943,7 +12943,7 @@ GameObject:
   - component: {fileID: 4297407212448968}
   m_Layer: 0
   m_Name: Roof_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12974,7 +12974,7 @@ GameObject:
   - component: {fileID: 4193795441715138}
   m_Layer: 0
   m_Name: Roof_Light_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13005,7 +13005,7 @@ GameObject:
   - component: {fileID: 4219875438638446}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13036,7 +13036,7 @@ GameObject:
   - component: {fileID: 4527139159482618}
   m_Layer: 0
   m_Name: Floor_Normal_02
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13067,7 +13067,7 @@ GameObject:
   - component: {fileID: 4887871665967002}
   m_Layer: 0
   m_Name: Floor_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13098,7 +13098,7 @@ GameObject:
   - component: {fileID: 4842791015311728}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13341,7 +13341,7 @@ GameObject:
   - component: {fileID: 4404929286329976}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13372,7 +13372,7 @@ GameObject:
   - component: {fileID: 4150788566346388}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13403,7 +13403,7 @@ GameObject:
   - component: {fileID: 4822872258071856}
   m_Layer: 0
   m_Name: Roof_Light_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13707,7 +13707,7 @@ GameObject:
   - component: {fileID: 4941350903927676}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13738,7 +13738,7 @@ GameObject:
   - component: {fileID: 4497342116651804}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13860,7 +13860,7 @@ GameObject:
   - component: {fileID: 4947962196068012}
   m_Layer: 0
   m_Name: Column_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14572,7 +14572,7 @@ GameObject:
   - component: {fileID: 4891439340048356}
   m_Layer: 0
   m_Name: Floor_Normal_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14603,7 +14603,7 @@ GameObject:
   - component: {fileID: 4974340129105102}
   m_Layer: 0
   m_Name: Wall_Top_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14634,7 +14634,7 @@ GameObject:
   - component: {fileID: 4863487864244354}
   m_Layer: 0
   m_Name: Wall_Top_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14891,7 +14891,7 @@ GameObject:
   - component: {fileID: 4555638340690166}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15195,7 +15195,7 @@ GameObject:
   - component: {fileID: 4520548707699622}
   m_Layer: 0
   m_Name: Roof_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15318,7 +15318,7 @@ GameObject:
   - component: {fileID: 4111875529556152}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15349,7 +15349,7 @@ GameObject:
   - component: {fileID: 4508248747687758}
   m_Layer: 0
   m_Name: Roof_Square_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15380,7 +15380,7 @@ GameObject:
   - component: {fileID: 4339688163446316}
   m_Layer: 0
   m_Name: Floor_Half_01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

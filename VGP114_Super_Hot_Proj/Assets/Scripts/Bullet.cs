@@ -50,6 +50,12 @@ public class Bullet : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+        if (hit.gameObject.CompareTag("Untagged"))
+        {
+            Destroy(gameObject);
+            
+        }
     }
 
 

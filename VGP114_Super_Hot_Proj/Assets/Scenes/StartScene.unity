@@ -664,7 +664,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: SUPER HOT
+  m_Text: EXTREME HOT
 --- !u!222 &1251038592
 CanvasRenderer:
   m_ObjectHideFlags: 0
